@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "谷歌永远点不到的搜索按钮+自定义地址video初始化",
+  "version": "1.0",
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.cn/"
+      ],
+      "js": [
+        "js/cannot_touch.js"
+      ]
+    },
+    {
+      "matches": [
+        "http://172.30.111.196:9999/consanguinity/AlarmConfig"
+      ],
+      "js": [
+        "js/new.js"
+      ]
+    }
+  ]
+}
